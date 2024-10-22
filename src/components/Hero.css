@@ -1,0 +1,107 @@
+.hero-section {
+    position: relative;
+    background-image: url('../assets/images/hero-background.jpeg');
+    background-size: cover;
+    overflow: hidden;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 1;
+
+    /* padding: 100px 50px;  */
+    min-height: 100vh;/*  Full viewport height */
+    background-color: #f5f5f5; /* Adjust the background color as needed */
+  }
+
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity for darkness */
+    z-index: 1;
+  }
+
+  .hero-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    z-index: 2;
+    color: white;
+    margin-top: -220px;
+  }
+  
+  .hero-text {
+    max-width: 60%; /* Adjust width as needed */ 
+    
+  }
+  
+  .hero-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .hero-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-text p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  .hero-image {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  cursor: pointer;
+
+  }
+  
+
+  .hero-image img {
+    width: 150px; /* Adjust the image size */
+    height: auto;
+  }
+  
+  .btn-hero-connect {
+    background-color: #f5ba13;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+  }
+  
+  .btn-hero-connect:hover {
+    background-color: #e6a210;
+  }
+  
+  .hero-photo-icon {
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;  /* Make the image circular */
+    border: 3px solid #fff;  /* Optional styling */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Optional shadow */
+    transition: transform 0.3s ease;
+  }
+  
+  .hero-photo-icon:hover {
+    transform: scale(1.1);  /* Enlarge on hover */
+  }
+  
+  .click-me-text {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #f5ba13;  /* Make the "Click me!" text colorful */
+    text-align: center;
+  }
